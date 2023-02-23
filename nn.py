@@ -11,6 +11,10 @@ ansi_reset = "\033[0m"
 ansi_white = "\033[97m"
 
 
+#
+# activation functions
+#
+
 def sigmoid(x):
     return 1 / (1 + numpy.exp(-x))
 
@@ -51,6 +55,10 @@ def softmax(x):
 def softmax_derivative(x):
     return softmax(x) * (1 - softmax(x))
 
+
+#
+# neural network implementation
+#
 
 class Layer:
 
